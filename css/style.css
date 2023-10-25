@@ -1,5 +1,9 @@
 /* reset rules */
 
+:root {
+    background-color: var()
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,12 @@
 .container {
     width: 90%;
     height: 90%;
-    padding: 5rem 0 0 5rem;
+    padding: 4rem 0 0 5rem;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
 }
 
 .d-flex {
@@ -24,17 +33,69 @@
     flex-wrap: wrap;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 /* end region utility */
+
+/* region main */
 
 main {
     width: 100vw;
     height: 90vh;
     background-color: black;
+    overflow-y: auto;
+    position: relative;
 }
 
 .card {
     background-color: red;
     min-width: 200px;
+    width: calc(100% / 7);
     height: 120px;
     border: 2px dashed green;
 }
+
+.speaker {
+    width: 150px;
+    height: 2rem;
+    background-color: orange;
+    border: 2px dashed green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* end region main */
+
+/* region footer */
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #222222;
+}
+
+.start {
+    width: 150px;
+    height: 100%;
+    background-color: orange;
+    border: 2px dashed green;
+}
+
+.centre {
+    width: 500px;
+    height: 100%;
+    background-color: orange;
+    border: 2px dashed green;
+}
+
+.end {
+    width: 150px;
+    height: 100%;
+    background-color: orange;
+    border: 2px dashed green;
+}
+
+/* end region footer */
