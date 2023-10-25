@@ -10,19 +10,23 @@
     box-sizing: border-box;
 }
 
+.img {
+    max-width: 100%;
+}
+
 /* end reset rules */
 
 /* Utility */
 
 .container {
-    width: 90%;
-    height: 90%;
-    padding: 4rem 0 0 5rem;
+    width: 100%;
+    padding: 3rem 0 0 5rem;  
     margin: 0 auto;
 }
 
 .row {
     width: 100%;
+    gap: 0.5rem;
 }
 
 .d-flex {
@@ -50,18 +54,15 @@ main {
 }
 
 .card {
-    background-color: red;
     min-width: 200px;
-    width: calc(100% / 7);
+    width: calc((100% / 7) - 0.5rem);
     height: 120px;
-    border: 2px dashed green;
 }
 
 .speaker {
     width: 150px;
     height: 2rem;
     background-color: orange;
-    border: 2px dashed green;
     position: absolute;
     top: 0;
     right: 0;
@@ -81,21 +82,18 @@ footer {
     width: 150px;
     height: 100%;
     background-color: orange;
-    border: 2px dashed green;
 }
 
 .centre {
     width: 500px;
     height: 100%;
     background-color: orange;
-    border: 2px dashed green;
 }
 
 .end {
     width: 150px;
     height: 100%;
     background-color: orange;
-    border: 2px dashed green;
 }
 
 /* end region footer */
