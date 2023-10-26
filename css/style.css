@@ -1,7 +1,13 @@
 /* reset rules */
 
 :root {
-    background-color: var()
+    --zoom-secondary: #4a4a4a;
+    --zoom-dark: black;
+    --zoom-primary: #626f7b;
+    --zoom-font: white;
+    --zoom-footer: #222222;
+    --zoom-share: #4bc800;
+    --zoom-end: #f40404;
 }
 
 * {
@@ -41,6 +47,10 @@
     justify-content: space-between;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 /* end region utility */
 
 /* region main */
@@ -48,7 +58,7 @@
 main {
     width: 100vw;
     height: 90vh;
-    background-color: black;
+    background-color: var(--zoom-dark);
     overflow-y: auto;
     position: relative;
 }
@@ -61,8 +71,8 @@ main {
 }
 
 .name {
-    background-color: #626f7b;
-    color: white;
+    background-color: var(--zoom-primary);
+    color: var(--zoom-font);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,9 +82,9 @@ main {
 .speaker {
     width: 120px;
     height: 1.5rem;
-    background-color: #4a4a4a;
+    background-color: var(--zoom-secondary);
     border-radius: 10px;
-    color: white;
+    color: var(--zoom-font);
     position: absolute;
     top: 0;
     right: 30px;
@@ -87,9 +97,9 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #4a4a4a;
+    background-color: var(--zoom-secondary);
     border-radius: 10px;
-    color: white;
+    color: var(--zoom-font);
     text-align: center;
     padding: 0.15rem;
 }
@@ -103,25 +113,50 @@ main {
 footer {
     width: 100vw;
     height: 10vh;
-    background-color: #222222;
+    background-color: var(--zoom-footer);
 }
 
 .start {
     width: 150px;
     height: 100%;
-    background-color: orange;
+    color: var(--zoom-font);
+    gap: 0.5rem;
+}
+
+.microphone {
+    width: 50%;
+}
+
+.icon {
+    padding: 0.25rem;
+}
+
+.camera {
+    width: 50%;
 }
 
 .centre {
     width: 500px;
     height: 100%;
-    background-color: orange;
+    color: var(--zoom-font);
+    gap: 0.5rem;
+}
+
+.share .icon i {
+    color: var(--zoom-share);
 }
 
 .end {
     width: 150px;
     height: 100%;
-    background-color: orange;
+    background-color: var(--zoom-secondary);
+    justify-content: center;
+}
+
+.call_close {
+    color: var(--zoom-end);
+    text-align: center;
+    align-self: center;
 }
 
 /* end region footer */
