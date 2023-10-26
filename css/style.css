@@ -104,8 +104,6 @@ main {
     padding: 0.15rem;
 }
 
-
-
 /* end region main */
 
 /* region footer */
@@ -120,7 +118,6 @@ footer {
     width: 150px;
     height: 100%;
     color: var(--zoom-font);
-    gap: 0.5rem;
 }
 
 .microphone {
@@ -128,7 +125,7 @@ footer {
 }
 
 .icon {
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 .camera {
@@ -155,7 +152,6 @@ footer {
 
 .call_close {
     color: var(--zoom-end);
-    text-align: center;
     align-self: center;
 }
 
